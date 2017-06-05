@@ -11,9 +11,10 @@ package mercado;
  */
 public class Producto {
     String producto;
-    float precio;
+    Float precio;
+    Producto getPrecio;
     
-    public Producto (String nombreDelProducto, float precio){
+    public Producto (String nombreDelProducto, Float precio){
         this.producto = nombreDelProducto;
         this.precio = precio;
     }
@@ -26,12 +27,16 @@ public class Producto {
         return this.producto;
     }
        
-    public void setPrecio (float precio){
+    public void setPrecio (Float precio){
         this.precio = precio;
     }
     
     public float getPrecio (){
         return this.precio;
     }
+    
+    public int compareTo (Producto otroProducto){
+        return this.precio.compareTo(otroProducto.precio);
+}
 }
 

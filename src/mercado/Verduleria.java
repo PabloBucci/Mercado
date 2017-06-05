@@ -12,7 +12,7 @@ package mercado;
 public class Verduleria extends Producto {
     private final String unidadDeVenta;
     
-    public Verduleria(String nombreDelProducto, String unidadDeVenta, float precio) {
+    public Verduleria(String nombreDelProducto, String unidadDeVenta, Float precio) {
         super(nombreDelProducto, precio);
         this.unidadDeVenta = unidadDeVenta;
     }
@@ -23,7 +23,7 @@ public class Verduleria extends Producto {
     }
 
     @Override
-    public void setPrecio(float precio) {
+    public void setPrecio(Float precio) {
         this.precio = precio;
     }
 

@@ -11,9 +11,9 @@ package mercado;
  */
 public class ArtPerfumeria extends Producto{
     
-    private final int contenido;
+    private final Integer contenido;
 
-    public ArtPerfumeria(String nombreDelProducto, int contenido, float precio) {
+    public ArtPerfumeria(String nombreDelProducto, Integer contenido, Float precio) {
         super(nombreDelProducto, precio);
         this.contenido = contenido;
     }
@@ -24,7 +24,7 @@ public class ArtPerfumeria extends Producto{
     }
     
     @Override
-    public void setPrecio(float precio) {
+    public void setPrecio(Float precio) {
         this.precio = precio;
     }
     

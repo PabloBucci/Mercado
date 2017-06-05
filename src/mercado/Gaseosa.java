@@ -10,14 +10,14 @@ package mercado;
  * @author Pablo
  */
 public class Gaseosa extends Producto {
-    private float litros;
+    private Float litros;
     
-    public Gaseosa(String nombreDelProducto, float litros, float precio) {
+    public Gaseosa(String nombreDelProducto, Float litros, Float precio) {
         super(nombreDelProducto, precio);
         this.litros = litros;
     }
 
-    public void setLitros(float litros) {
+    public void setLitros(Float litros) {
         this.litros = litros;
     }
 
@@ -26,7 +26,7 @@ public class Gaseosa extends Producto {
         this.producto = producto;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(Float precio) {
         this.precio = precio;
     }
     

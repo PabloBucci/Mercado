@@ -18,5 +18,8 @@ public class Mercado {
         // TODO code application logic here
     ListaDeProductos productos = new ListaDeProductos();    
     productos.listarProductos();
+    System.out.println("=============================");
+    System.out.println("Producto más caro: " + productos.productoMasCaro().getProducto());
+    System.out.println("Producto más barato: " + productos.productoMasBarato().getProducto());
     }
 }
