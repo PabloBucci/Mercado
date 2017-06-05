@@ -21,8 +21,8 @@ public class Mercado {
         // TODO code application logic here
         List<Producto> productos = new LinkedList<>();
         
-        productos.add(new Gaseosa("Coca-Cola Zero", 1, 20));
-        productos.add(new Gaseosa("Coca-Cola", 150, 18));
+        productos.add(new Gaseosa("Coca-Cola Zero", 1.5, 20));
+        productos.add(new Gaseosa("Coca-Cola", 1.5, 18));
         productos.add(new ArtPerfumeria("Shampoo Sedal", 500, 30));//Supongo que es un error de tipeo y asumo 500CC
         productos.add(new Verduleria("Frutillas", "Kilo", 64));
         

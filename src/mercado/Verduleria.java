@@ -43,6 +43,6 @@ public class Verduleria extends Producto {
     
     @Override
     public String toString() {
-        return ("Nombre: " + this.producto + " /// Precio: " + this.precio + "Unidad de venta: " + this.unidadDeVenta);
+        return ("Nombre: " + this.producto + " /// Precio: $" + this.precio + " /// Unidad de venta: " + this.unidadDeVenta);
     }      
 }

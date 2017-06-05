@@ -26,7 +26,6 @@ public class Gaseosa extends Producto {
         this.producto = producto;
     }
 
-    @Override
     public void setPrecio(float precio) {
         this.precio = precio;
     }

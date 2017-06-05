@@ -25,7 +25,7 @@ public class Producto {
     public String getProducto (){
         return this.producto;
     }
-          
+       
     public void setPrecio (float precio){
         this.precio = precio;
     }
@@ -33,9 +33,5 @@ public class Producto {
     public float getPrecio (){
         return this.precio;
     }
-    
-    public String toString() {
-        return ("Nombre: " + this.producto + " /// " + " /// Precio: " + this.precio);
-    }    
 }
 
