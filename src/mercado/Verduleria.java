@@ -9,16 +9,12 @@ package mercado;
  *
  * @author Pablo
  */
-public class Gaseosa extends Producto {
-    private float litros;
+public class Verduleria extends Producto {
+    private final String unidadDeVenta;
     
-    public Gaseosa(String nombreDelProducto, float litros, float precio) {
+    public Verduleria(String nombreDelProducto, String unidadDeVenta, float precio) {
         super(nombreDelProducto, precio);
-        this.litros = litros;
-    }
-
-    public void setLitros(float litros) {
-        this.litros = litros;
+        this.unidadDeVenta = unidadDeVenta;
     }
 
     @Override
@@ -30,22 +26,23 @@ public class Gaseosa extends Producto {
     public void setPrecio(float precio) {
         this.precio = precio;
     }
-    
-    public float getLitros() {
-        return litros;
+
+    public String getUnidadDeVenta() {
+        return unidadDeVenta;
     }
 
     @Override
     public String getProducto() {
         return producto;
     }
+
     @Override
     public float getPrecio() {
         return precio;
     }
-      
+    
     @Override
     public String toString() {
-        return ("Nombre: " + this.producto + " /// Litros: " + this.litros + " /// Precio: " + precio); 
-    }
+        return ("Nombre: " + this.producto + " /// Precio: " + this.precio + "Unidad de venta: " + this.unidadDeVenta);
+    }      
 }

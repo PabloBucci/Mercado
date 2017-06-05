@@ -10,15 +10,11 @@ package mercado;
  * @author Pablo
  */
 public class Producto {
-    private String producto;
-    private String unidad;
-    private Double contenido;
-    private Double precio;
+    String producto;
+    float precio;
     
-    public Producto (String nombreDelProducto, String unidad, Double contenido, Double precio){
+    public Producto (String nombreDelProducto, float precio){
         this.producto = nombreDelProducto;
-        this.unidad = unidad;
-        this.contenido = contenido;
         this.precio = precio;
     }
     
@@ -29,33 +25,17 @@ public class Producto {
     public String getProducto (){
         return this.producto;
     }
-    
-    public void setUnidad (String unidad){
-        this.unidad = unidad;
-    }
-    
-    public String getUnidad (){
-        return this.unidad;
-    }
-    
-    public void setContenido (Double contenido){
-        this.precio = contenido;
-    }
-    
-    public Double getContenido (){
-        return this.contenido;
-    }
-    
-    public void setPrecio (Double precio){
+          
+    public void setPrecio (float precio){
         this.precio = precio;
     }
     
-    public Double getPrecio (){
+    public float getPrecio (){
         return this.precio;
     }
     
     public String toString() {
-        return ("Nombre: " + this.producto + " /// " + this.unidad + ": "+ this.contenido + " /// Precio: " + this.precio);
+        return ("Nombre: " + this.producto + " /// " + " /// Precio: " + this.precio);
     }    
 }
 

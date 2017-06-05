@@ -21,10 +21,10 @@ public class Mercado {
         // TODO code application logic here
         List<Producto> productos = new LinkedList<>();
         
-        productos.add(new Producto("Coca-Cola Zero", "Lt", 1.50, 20.00));
-        productos.add(new Producto("Coca-Cola", "Lt", 1.50, 18.00));
-        productos.add(new Producto("Shampoo Sedal", "CC", 500.00, 30.00));//Supongo que es un error de tipeo y asumo 500CC
-        productos.add(new Producto("Frutillas", "Kg", 1.00, 64.00));
+        productos.add(new Gaseosa("Coca-Cola Zero", 1, 20));
+        productos.add(new Gaseosa("Coca-Cola", 150, 18));
+        productos.add(new ArtPerfumeria("Shampoo Sedal", 500, 30));//Supongo que es un error de tipeo y asumo 500CC
+        productos.add(new Verduleria("Frutillas", "Kilo", 64));
         
         for (Producto e: productos){
             System.out.println(e);

@@ -9,43 +9,37 @@ package mercado;
  *
  * @author Pablo
  */
-public class Gaseosa extends Producto {
-    private float litros;
+public class ArtPerfumeria extends Producto{
     
-    public Gaseosa(String nombreDelProducto, float litros, float precio) {
-        super(nombreDelProducto, precio);
-        this.litros = litros;
-    }
+    private final int contenido;
 
-    public void setLitros(float litros) {
-        this.litros = litros;
+    public ArtPerfumeria(String nombreDelProducto, int contenido, float precio) {
+        super(nombreDelProducto, precio);
+        this.contenido = contenido;
     }
 
     @Override
     public void setProducto(String producto) {
         this.producto = producto;
     }
-
+    
     @Override
     public void setPrecio(float precio) {
         this.precio = precio;
     }
     
-    public float getLitros() {
-        return litros;
-    }
-
     @Override
     public String getProducto() {
         return producto;
     }
+
     @Override
     public float getPrecio() {
         return precio;
     }
-      
+ 
     @Override
     public String toString() {
-        return ("Nombre: " + this.producto + " /// Litros: " + this.litros + " /// Precio: " + precio); 
-    }
+        return ("Nombre: " + this.producto + " /// Contenido: " + this.contenido + "cc /// Precio: " + this.precio);
+    }  
 }
