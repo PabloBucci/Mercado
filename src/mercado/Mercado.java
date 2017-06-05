@@ -5,9 +5,6 @@
  */
 package mercado;
 
-import java.util.LinkedList;
-import java.util.List;
-
 /**
  *
  * @author Pablo
@@ -19,16 +16,7 @@ public class Mercado {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        List<Producto> productos = new LinkedList<>();
-        
-        productos.add(new Gaseosa("Coca-Cola Zero", 1.5, 20));
-        productos.add(new Gaseosa("Coca-Cola", 1.5, 18));
-        productos.add(new ArtPerfumeria("Shampoo Sedal", 500, 30));//Supongo que es un error de tipeo y asumo 500CC
-        productos.add(new Verduleria("Frutillas", "Kilo", 64));
-        
-        for (Producto e: productos){
-            System.out.println(e);
-        }
+    ListaDeProductos productos = new ListaDeProductos();    
+    productos.listarProductos();
     }
-    
 }
