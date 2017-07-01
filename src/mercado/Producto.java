@@ -9,7 +9,7 @@ package mercado;
  *
  * @author Pablo
  */
-public class Producto {
+public abstract class Producto {
     String producto;
     Float precio;
     Producto getPrecio;

@@ -17,26 +17,6 @@ public class ArtPerfumeria extends Producto{
         super(nombreDelProducto, precio);
         this.contenido = contenido;
     }
-
-    @Override
-    public void setProducto(String producto) {
-        this.producto = producto;
-    }
-    
-    @Override
-    public void setPrecio(Float precio) {
-        this.precio = precio;
-    }
-    
-    @Override
-    public String getProducto() {
-        return producto;
-    }
-
-    @Override
-    public float getPrecio() {
-        return precio;
-    }
  
     @Override
     public String toString() {

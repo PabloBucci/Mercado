@@ -17,28 +17,8 @@ public class Verduleria extends Producto {
         this.unidadDeVenta = unidadDeVenta;
     }
 
-    @Override
-    public void setProducto(String producto) {
-        this.producto = producto;
-    }
-
-    @Override
-    public void setPrecio(Float precio) {
-        this.precio = precio;
-    }
-
     public String getUnidadDeVenta() {
         return unidadDeVenta;
-    }
-
-    @Override
-    public String getProducto() {
-        return producto;
-    }
-
-    @Override
-    public float getPrecio() {
-        return precio;
     }
     
     @Override
